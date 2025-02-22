@@ -7,7 +7,7 @@ from datetime import datetime
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/content/Screen_time_2022.csv")
+    df = pd.read_csv("Screen_time_2022.csv")
     df["Date"] = pd.to_datetime(df["Date"])  # Ensure Date is in datetime format
     return df
 
